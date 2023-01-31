@@ -14,14 +14,14 @@
     <h3>2022 - 2023</h3>
     <button type="button" onclick="alert('Hello world!')">Click Me!</button>
  
-    <form id="userinput" action="/action_page.php" onsubmit="return onSubmit(event)">
+    <form id="userinput" onsubmit="return onSubmit(event)">
         <label for="pgenome">Enter the paternal genome:</label>
         <input type="text" id="pgenome" name="pgenome"><br><br>
         <label for="mgenome">Enter the maternal genome:</label>
         <input type="text" id="mgenome" name="mgenome"><br><br>
         <input type="checkbox" id="Autosomal" name="Autosomal" value="Autosomal">
         <label for="Autosomal"> Autosomal Inheritance (Leave unchecked for X-Linked)</label><br>
-        <input type="button" onclick="handleSubmit(event)" value="Submit">
+        <input type="submit" value="Submit">
       </form>
 
 
