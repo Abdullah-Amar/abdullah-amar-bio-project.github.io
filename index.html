@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Biology Project (22-23)</title>
-  </head>
-  <body>
-	<script src="index.js"></script>
 
-    <h1>Grade 10 Biology Project</h1>
-    <h2>Abdullah Mahmood</h2>
-    <h3>2022 - 2023</h3>
-    <button type="button" onclick="alert('Hello world!')">Click Me!</button>
- 
-    <form id="userinput" onsubmit="return onSubmit(event)">
-        <label for="pgenome">Enter the paternal genome:</label>
-        <input type="text" id="pgenome" name="pgenome"><br><br>
-        <label for="mgenome">Enter the maternal genome:</label>
-        <input type="text" id="mgenome" name="mgenome"><br><br>
-        <input type="checkbox" id="Autosomal" name="Autosomal" value="Autosomal">
-        <label for="Autosomal"> Autosomal Inheritance (Leave unchecked for X-Linked)</label><br>
-        <input type="submit" value="Submit">
-      </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Biology Project (22-23)</title>
+</head>
+
+<body>
+  <script src="index.js"></script>
+
+  <h1>Grade 10 Biology Project: Genetics</h1>
+  <h2>Abdullah Mahmood</h2>
+  <h3>Year of 2022 - 2023</h3>
+  <button type="button"
+    onclick="alert('Always use the letter a, example: AA, Aa, aa \nMake sure you check the checkbox depending on what type of inheritance you would like to see \nIf you are doing Autosomal Inheritance, write the genomes for both parents as two as, capital A for dominant gene and lowercase a for recessive gene \nIf you are doing X-Linked inheritance, write the genome for the father as one letter, lowercase or uppercase a, based on the genome of the X chromsome, do the mother normally \nPlease only use the letter A, or else it will not work!!!!')">Instructions</button>
+
+  <form id="userinput" onsubmit="return onSubmit(event)">
+    <label for="pgenome">Enter the paternal genome:</label>
+    <input type="text" id="pgenome" name="pgenome"><br><br>
+    <label for="mgenome">Enter the maternal genome:</label>
+    <input type="text" id="mgenome" name="mgenome"><br><br>
+    <input type="checkbox" id="Autosomal" name="Autosomal" value="Autosomal">
+    <label for="Autosomal"> Autosomal Inheritance (Leave unchecked for X-Linked)</label><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p id="result">
+    
+  </p>
 
 
-  </body>
+</body>
+
 </html>
